@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 130" width="1200" height="130" role="img" aria-label="Animated molecular header">
+  <!-- transparent background -->
+
+  <!-- ================= drifting particles (molecules in solution) ================= -->
+  <g fill="#14b8a6">
+    <circle cx="130" cy="86" r="2.6" opacity="0.3">
+      <animateTransform attributeName="transform" type="translate" values="0 0; 7 -6; -4 4; 0 0" dur="17s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.4;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1"/>
+      <animate attributeName="opacity" values="0.15;0.38;0.15" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="205" cy="32" r="2" opacity="0.25">
+      <animateTransform attributeName="transform" type="translate" values="0 0; -6 5; 4 -4; 0 0" dur="21s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.4;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1"/>
+      <animate attributeName="opacity" values="0.12;0.3;0.12" dur="7.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="500" cy="40" r="2.4" opacity="0.28">
+      <animateTransform attributeName="transform" type="translate" values="0 0; 8 6; -5 -3; 0 0" dur="19s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.4;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1"/>
+      <animate attributeName="opacity" values="0.14;0.34;0.14" dur="6.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="600" cy="98" r="2.2" opacity="0.26">
+      <animateTransform attributeName="transform" type="translate" values="0 0; -5 -6; 5 3; 0 0" dur="23s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.4;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1"/>
+      <animate attributeName="opacity" values="0.12;0.3;0.12" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="915" cy="46" r="2.6" opacity="0.3">
+      <animateTransform attributeName="transform" type="translate" values="0 0; 6 6; -4 -5; 0 0" dur="18s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.4;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1"/>
+      <animate attributeName="opacity" values="0.15;0.36;0.15" dur="6.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1015" cy="84" r="2" opacity="0.24">
+      <animateTransform attributeName="transform" type="translate" values="0 0; -7 4; 4 -5; 0 0" dur="22s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.4;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1"/>
+      <animate attributeName="opacity" values="0.12;0.3;0.12" dur="7.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1110" cy="52" r="2.4" opacity="0.28">
+      <animateTransform attributeName="transform" type="translate" values="0 0; 5 6; -6 -3; 0 0" dur="20s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.4;0.75;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1"/>
+      <animate attributeName="opacity" values="0.14;0.32;0.14" dur="6.9s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- ================= small ring (left) ================= -->
+  <g transform="translate(300 62)">
+    <g stroke="#14b8a6" fill="none" stroke-linejoin="round">
+      <polygon points="0,-28 24.25,-14 24.25,14 0,28 -24.25,14 -24.25,-14" stroke-width="1.4" opacity="0.5"/>
+      <circle cx="0" cy="0" r="15" stroke-width="1.1" opacity="0.28"/>
+    </g>
+    <g fill="#14b8a6" opacity="0.75">
+      <circle cx="0" cy="-28" r="2.4"/><circle cx="24.25" cy="-14" r="2.4"/><circle cx="24.25" cy="14" r="2.4"/>
+      <circle cx="0" cy="28" r="2.4"/><circle cx="-24.25" cy="14" r="2.4"/><circle cx="-24.25" cy="-14" r="2.4"/>
+    </g>
+    <!-- circulating electron -->
+    <g>
+      <circle r="5" fill="#2dd4bf" opacity="0.25"/>
+      <circle r="2.2" fill="#5eead4"/>
+      <animateMotion dur="4.2s" repeatCount="indefinite" path="M -15,0 a 15,15 0 1,1 30,0 a 15,15 0 1,1 -30,0"/>
+    </g>
+  </g>
+
+  <!-- ================= hero ring (center-right) ================= -->
+  <g transform="translate(760 64)">
+    <g stroke="#14b8a6" fill="none" stroke-linejoin="round">
+      <polygon points="0,-40 34.64,-20 34.64,20 0,40 -34.64,20 -34.64,-20" stroke-width="1.5" opacity="0.55"/>
+      <circle cx="0" cy="0" r="23" stroke-width="1.2" opacity="0.3"/>
+    </g>
+    <g fill="#14b8a6" opacity="0.8">
+      <circle cx="0" cy="-40" r="3"/><circle cx="34.64" cy="-20" r="3"/><circle cx="34.64" cy="20" r="3"/>
+      <circle cx="0" cy="40" r="3"/><circle cx="-34.64" cy="20" r="3"/><circle cx="-34.64" cy="-20" r="3"/>
+    </g>
+    <!-- circulating electron -->
+    <g>
+      <circle r="6.5" fill="#2dd4bf" opacity="0.22"/>
+      <circle r="2.8" fill="#5eead4"/>
+      <animateMotion dur="5.6s" repeatCount="indefinite" path="M -23,0 a 23,23 0 1,0 46,0 a 23,23 0 1,0 -46,0"/>
+    </g>
+  </g>
+</svg>
