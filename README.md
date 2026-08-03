@@ -1,59 +1,84 @@
-<p align="center">
-  <img src="assets/header-helix.svg" alt="Spinning double helix" width="100%">
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/lockup-dark.svg">
+  <img alt="Martin Schwalm" src="assets/lockup.svg" width="420">
+</picture>
 
-<p align="center">
-  <a href="https://www.linkedin.com/in/martin-schwalm/" title="LinkedIn"><img src="assets/icons/linkedin.svg" width="36" height="36" alt="LinkedIn"></a>
-  &nbsp;&nbsp;&nbsp;
-  <a href="https://orcid.org/0000-0002-1252-1829" title="ORCID"><img src="assets/icons/orcid.svg" width="36" height="36" alt="ORCID"></a>
-  &nbsp;&nbsp;&nbsp;
-  <a href="https://scholar.google.com/citations?user=jOQsOzoAAAAJ&hl=en" title="Google Scholar"><img src="assets/icons/scholar.svg" width="36" height="36" alt="Google Scholar"></a>
-</p>
+**Chemical biologist. I build assays at the bench and try to make helpful tools for everything around them.**
 
-<br>
+I am a trained biochemist who became interested in building the software I need with the help
+of LLMs. I am sure there is a lot of room for improvement, but I would still like to make the
+tools open source, since they have turned out to be helpful for me. I am still learning, and
+happy to implement improvements in my projects. Currently, my focus is on Monoleaf, a document
+editor for `.md` files that aims to optimize interaction with LLMs and to suppress their desire
+to rewrite everything. I am hoping this project might be helpful to somebody else as well.
 
-### Focus
+[ORCID](https://orcid.org/0000-0002-1252-1829) &nbsp;·&nbsp;
+[Google Scholar](https://scholar.google.com/citations?user=jOQsOzoAAAAJ&hl=en) &nbsp;·&nbsp;
+[LinkedIn](https://www.linkedin.com/in/martin-schwalm/)
 
-Cellular target engagement &nbsp;·&nbsp; biophysical assay development &nbsp;·&nbsp; targeted protein degradation &nbsp;·&nbsp; chemical probe design for the understudied proteome
+## Open work
 
-### Selected publications
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/monoleaf-logo-dark.svg">
+  <img alt="Monoleaf" src="assets/monoleaf-logo.svg" width="200">
+</picture>
 
-1. Scholes NS, … **Schwalm MP**, … Winter GE. [Inhibitors supercharge kinase turnover through native proteolytic circuits](https://doi.org/10.1038/s41586-025-09763-9). *Nature* 649, 1032–1041 (2026).
-2. **Schwalm MP**, Knapp S. [Single-plate kinome screening in live-cells to enable highly cost-efficient kinase inhibitor profiling](https://doi.org/10.1016/j.slasd.2025.100214). *SLAS Discovery* 31, 100214 (2025).
-3. **Schwalm MP**, Menge A, Elson L, Greco FA, Robers MB, Müller S, Knapp S. [Functional characterization of pathway inhibitors for the ubiquitin-proteasome system (UPS) as tool compounds for CRBN and VHL-mediated targeted protein degradation](https://doi.org/10.1021/acschembio.4c00450). *ACS Chem. Biol.* 20, 94–104 (2025).
-4. Dopfer J, Vasta JD, Müller S, Knapp S, Robers MB, **Schwalm MP**. [tracerDB: a crowdsourced fluorescent tracer database for target engagement analysis](https://doi.org/10.1038/s41467-024-49896-5). *Nat. Commun.* 15, 5646 (2024).
-5. **Schwalm MP**, Saxena K, Müller S, Knapp S. [Luciferase- and HaloTag-based reporter assays to measure small-molecule-induced degradation pathway in living cells](https://doi.org/10.1038/s41596-024-00979-z). *Nat. Protoc.* 19, 2317–2357 (2024).
-6. **Schwalm MP**, Krämer A, Dölle A, Weckesser J, Yu X, Jin J, Saxena K, Knapp S. [Tracking the PROTAC degradation pathway in living cells highlights the importance of ternary complex measurement for PROTAC optimization](https://doi.org/10.1016/j.chembiol.2023.06.002). *Cell Chem. Biol.* 30, 753–765 (2023).
-7. Nemec V, **Schwalm MP**, Müller S, Knapp S. [PROTAC degraders as chemical probes for studying target biology and target validation](https://doi.org/10.1039/D2CS00478J). *Chem. Soc. Rev.* 51, 7971–7993 (2022).
+A portable, single-file Markdown editor. One `.md` file is the whole document:
+comments, tracked changes, page setup and metadata all live inside it as plain text, so there
+is no sidecar folder, no database and no proprietary format. It renders as you type while the
+file on disk stays ordinary Markdown, which also makes it safe to hand to a language model:
+the model marks up what it would change and you accept or reject each edit, instead of getting
+the whole file rewritten underneath you.
 
-Full list: [ORCID](https://orcid.org/0000-0002-1252-1829) &nbsp;·&nbsp; [Google Scholar](https://scholar.google.com/citations?user=jOQsOzoAAAAJ&hl=en)
+<img alt="Monoleaf editing a document with live preview" src="assets/monoleaf-showcase.png" width="820">
 
-### Open work
+[monoleaf.org](https://monoleaf.org) &nbsp;·&nbsp; [Source](https://github.com/vibingbiochemist/Monoleaf)<!-- MONOLEAF_RELEASE:START --><!-- MONOLEAF_RELEASE:END -->
 
-**[tracerDB](https://tracerdb.org)** &mdash; an open-access database of fluorescent tracers for target engagement assays.
+### tracerDB
+
+An open-access, crowdsourced database of fluorescent tracers for target engagement assays,
+so a tracer that already works for a given target can be looked up rather than rediscovered.
+
+[tracerdb.org](https://tracerdb.org) &nbsp;·&nbsp; [Paper](https://doi.org/10.1038/s41467-024-49896-5)<br>
+<sub>Dopfer J, Vasta JD, Müller S, Knapp S, Robers MB, **Schwalm MP** &nbsp;·&nbsp; *Nature Communications* 15, 5646 &nbsp;·&nbsp; 2024</sub>
+
+## Selected publications
+
+[Inhibitors supercharge kinase turnover through native proteolytic circuits](https://doi.org/10.1038/s41586-025-09763-9)<br>
+<sub>Scholes NS, … **Schwalm MP**, … Winter GE &nbsp;·&nbsp; *Nature* 649, 1032–1041 &nbsp;·&nbsp; 2026</sub>
+
+[Single-plate kinome screening in live-cells to enable highly cost-efficient kinase inhibitor profiling](https://doi.org/10.1016/j.slasd.2025.100214)<br>
+<sub>**Schwalm MP**, Knapp S &nbsp;·&nbsp; *SLAS Discovery* 31, 100214 &nbsp;·&nbsp; 2025</sub>
+
+[Functional characterization of pathway inhibitors for the ubiquitin–proteasome system as tool compounds for CRBN- and VHL-mediated targeted protein degradation](https://doi.org/10.1021/acschembio.4c00450)<br>
+<sub>**Schwalm MP**, Menge A, Elson L, Greco FA, Robers MB, Müller S, Knapp S &nbsp;·&nbsp; *ACS Chemical Biology* 20, 94–104 &nbsp;·&nbsp; 2025</sub>
+
+[Luciferase- and HaloTag-based reporter assays to measure small-molecule-induced degradation pathway in living cells](https://doi.org/10.1038/s41596-024-00979-z)<br>
+<sub>**Schwalm MP**, Saxena K, Müller S, Knapp S &nbsp;·&nbsp; *Nature Protocols* 19, 2317–2357 &nbsp;·&nbsp; 2024</sub>
+
+[Tracking the PROTAC degradation pathway in living cells highlights the importance of ternary complex measurement for PROTAC optimization](https://doi.org/10.1016/j.chembiol.2023.06.002)<br>
+<sub>**Schwalm MP**, Krämer A, Dölle A, Weckesser J, Yu X, Jin J, Saxena K, Knapp S &nbsp;·&nbsp; *Cell Chemical Biology* 30, 753–765 &nbsp;·&nbsp; 2023</sub>
+
+[PROTAC degraders as chemical probes for studying target biology and target validation](https://doi.org/10.1039/D2CS00478J)<br>
+<sub>Nemec V, **Schwalm MP**, Müller S, Knapp S &nbsp;·&nbsp; *Chemical Society Reviews* 51, 7971–7993 &nbsp;·&nbsp; 2022</sub>
+
+<sub>Full list: [ORCID](https://orcid.org/0000-0002-1252-1829) &nbsp;·&nbsp; [Google Scholar](https://scholar.google.com/citations?user=jOQsOzoAAAAJ&hl=en)</sub>
 
 <!-- =========================================================================
-     FEATURED REPOSITORIES  (prepared — uncomment when you have public repos)
+     FEATURED REPOSITORIES  (prepared; uncomment once a repo is public)
 
-     Delete this comment wrapper and fill one line per repo. Keep it short.
+     Only list repositories that resolve publicly on github.com. Keep one line
+     each. No em dashes anywhere in this file: use a colon, a comma or a
+     semicolon instead.
 
-### Featured repositories
+## Featured repositories
 
-- **[repo-name](https://github.com/USER/repo-name)** — one-line description of what it does.
-- **[repo-name](https://github.com/USER/repo-name)** — one-line description of what it does.
+**[repo-name](https://github.com/vibingbiochemist/repo-name)**: one line on what it does.
 
      ========================================================================= -->
 
-<br>
-
-<p align="center">
-  <img src="assets/footer.svg" alt="" width="100%">
-</p>
-
 <!--
-Setup notes, delete before publishing:
-- Renders on your profile only if the repo is named exactly like your GitHub username.
-- Commit the whole assets/ folder (header-helix.svg, footer.svg, icons/) with this file, keeping relative paths.
-- Everything here is public-tier.
-- See CLAUDE.md for how to update this profile (publications, repos, animations) later.
+Maintenance: see CLAUDE.md. The lockup is generated; edit scripts/build_lockup.py
+and run `python scripts/build_lockup.py` rather than hand-editing assets/lockup*.svg.
+This README renders on the profile only while the repo is named after the username.
 -->

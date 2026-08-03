@@ -1,1 +1,13 @@
 .claude/
+
+# Build output of scripts/build_preview.py — a local browser check, not part of the profile.
+preview.html
+preview-dark.html
+
+# Scratch render/screenshot dirs
+.tmp-shots/
+.tmp-*.html
+
+# Python bytecode
+__pycache__/
+*.py[cod]

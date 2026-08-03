@@ -1,0 +1,56 @@
+# Keeps the Monoleaf release line in README.md current, so the profile shows the
+# shipped version without anyone editing Markdown.
+#
+# scripts/update_release.py only rewrites the file on a confirmed HTTP 200, so this
+# job is a harmless no-op until the Monoleaf repo is readable and has a published
+# release. It will start working on its own the moment both are true.
+name: Track Monoleaf release
+
+on:
+  schedule:
+    # 06:17 UTC daily. Off the hour on purpose: GitHub drops scheduled runs that
+    # land in the queue spike at :00.
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+  repository_dispatch:
+    # Lets Monoleaf's own release workflow ping this repo for an instant update:
+    #   gh api repos/vibingbiochemist/<username>/dispatches \
+    #     -f event_type=monoleaf-released
+    types: [monoleaf-released]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: monoleaf-release
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Refresh the release line
+        env:
+          # MONOLEAF_TOKEN is a fine-grained PAT with Contents:read on the Monoleaf
+          # repo, needed only while that repo is private — a repository's own
+          # GITHUB_TOKEN cannot read a different private repo. Delete the secret once
+          # Monoleaf is public and the default token takes over.
+          GH_TOKEN: ${{ secrets.MONOLEAF_TOKEN || github.token }}
+        run: python scripts/update_release.py
+
+      - name: Commit if it changed
+        run: |
+          if [[ -z "$(git status --porcelain README.md)" ]]; then
+            echo "README.md unchanged; nothing to commit."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update Monoleaf release line" README.md
+          git push
