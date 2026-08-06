@@ -5,12 +5,9 @@
 
 **Chemical biologist. I build assays at the bench and try to make helpful tools for everything around them.**
 
-I am a trained biochemist who became interested in building the software I need with the help
-of LLMs. I am sure there is a lot of room for improvement, but I would still like to make the
-tools open source, since they have turned out to be helpful for me. I am still learning, and
-happy to implement improvements in my projects. Currently, my focus is on Monoleaf, a document
-editor for `.md` files that aims to optimize interaction with LLMs and to suppress their desire
-to rewrite everything. I am hoping this project might be helpful to somebody else as well.
+As a trained biochemist, I became interested in using LLMs to build the software I need. While I am sure there is room for improvement, I would still like to make these tools open source, as they have been helpful to me. Despite using LLMs, I apply my scientific critical thinking skills to ensure that the code I produce is the best it can be by questioning everything that is produced.
+It's all part of the learning process, so I am happy to implement improvements in my projects. Currently, I am focusing on Monoleaf, a document editor for .md files that aims to optimise interaction with LLMs and suppress their tendency to rewrite everything. 
+I hope this project will be helpful to others as well. It's definitely a work in progress.
 
 [ORCID](https://orcid.org/0000-0002-1252-1829) &nbsp;·&nbsp;
 [Google Scholar](https://scholar.google.com/citations?user=jOQsOzoAAAAJ&hl=en) &nbsp;·&nbsp;
