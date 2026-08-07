@@ -29,7 +29,7 @@ the whole file rewritten underneath you.
 
 <img alt="Monoleaf editing a document with live preview" src="assets/monoleaf-showcase.png" width="820">
 
-[monoleaf.org](https://monoleaf.org) &nbsp;·&nbsp; [Source](https://github.com/vibingbiochemist/Monoleaf)<!-- MONOLEAF_RELEASE:START --><!-- MONOLEAF_RELEASE:END -->
+[monoleaf.org](https://monoleaf.org) &nbsp;·&nbsp; [Source](https://github.com/vibingbiochemist/Monoleaf)<!-- MONOLEAF_RELEASE:START --> &nbsp;·&nbsp; Latest release `v1.1.0` &nbsp;·&nbsp; 7 August 2026<!-- MONOLEAF_RELEASE:END -->
 
 ### tracerDB
 
